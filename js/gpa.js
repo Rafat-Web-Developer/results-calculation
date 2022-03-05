@@ -52,11 +52,31 @@ const getFirstGPA = () => {
     const cfLab = checkGradeAndGetTotal(getFieldValue('cfLab'), 1);
     const cLab = checkGradeAndGetTotal(getFieldValue('cLab'), 2);
     const phy1Lab = checkGradeAndGetTotal(getFieldValue('phy1Lab'), 1);
-    // console.log(cf, c, phy1, math1, eng, acc, bs, cfLab, cLab, phy1Lab);
     total = cf + c + phy1 + math1 + eng + acc + bs + cfLab + cLab + phy1Lab;
     const gpa = total / 20;
     const showFirstGPAFront = document.getElementById('showFirstGPAFront');
     const showFirstGPA = document.getElementById('showFirstGPA');
     showFirstGPAFront.innerText = gpa.toFixed(2);
     showFirstGPA.innerText = gpa.toFixed(2);
+};
+
+
+const getSecondGPA = () => {
+    let total = 0;
+    const bee = checkGradeAndGetTotal(getFieldValue('bee'), 3);
+    const ds = checkGradeAndGetTotal(getFieldValue('ds'), 3);
+    const cPlus = checkGradeAndGetTotal(getFieldValue('cPlus'), 3);
+    const phy2 = checkGradeAndGetTotal(getFieldValue('phy2'), 2);
+    const math2 = checkGradeAndGetTotal(getFieldValue('math2'), 3);
+    const pe = checkGradeAndGetTotal(getFieldValue('pe'), 2);
+    const beeLab = checkGradeAndGetTotal(getFieldValue('beeLab'), 1);
+    const dsLab = checkGradeAndGetTotal(getFieldValue('dsLab'), 1);
+    const cPlusLab = checkGradeAndGetTotal(getFieldValue('cPlusLab'), 2);
+    const phy2Lab = checkGradeAndGetTotal(getFieldValue('phy2Lab'), 1);
+    total = bee + ds + cPlus + phy2 + math2 + pe + beeLab + dsLab + cPlusLab + phy2Lab;
+    const gpa = total / 20;
+    const showSecondGPAFront = document.getElementById('showSecondGPAFront');
+    const showSecondGPA = document.getElementById('showSecondGPA');
+    showSecondGPAFront.innerText = gpa.toFixed(2);
+    showSecondGPA.innerText = gpa.toFixed(2);
 };

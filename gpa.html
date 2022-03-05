@@ -138,7 +138,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-second">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Second Semester<span class="mx-auto badge bg-info fw-bold">GPA : 0.00</span>
+                  Second Semester<span class="mx-auto badge bg-info fw-bold" id="showSecondGPAFront">GPA : 0.00</span>
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-second" data-bs-parent="#accordionFlushExample">
@@ -147,77 +147,77 @@
                     <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">BEE</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="bee" placeholder="Enter BEE total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">DS</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="ds" placeholder="Enter DS total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">C++</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="cPlus" placeholder="Enter C++ total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">PHY2</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="phy2" placeholder="Enter PHY2 total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">MATH2</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="math2" placeholder="Enter MATH2 total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">PE</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="pe" placeholder="Enter PE total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
-                        <label for="inputPassword" class="col-2 col-form-label fw-bold">BE LAB</label>
+                        <label for="inputPassword" class="col-2 col-form-label fw-bold">BEE LAB</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="beeLab" placeholder="Enter BEE Lab total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">DS LAB</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="dsLab" placeholder="Enter DS Lab total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">C++ LAB</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="cPlusLab" placeholder="Enter C++ Lab total marks">
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="inputPassword" class="col-2 col-form-label fw-bold">PHY2 LAB</label>
                         <div class="col-10">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="phy2Lab" placeholder="Enter PHY2 Lab total marks">
                         </div>
                       </div>
 
-                      <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5">0.00</span></p>
+                      <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5" id="showSecondGPA">0.00</span></p>
 
                       <div class="w-50 my-2 mx-auto">
-                        <button class="btn btn-info text-uppercase fw-bold w-100">Get GPA</button>
+                        <button class="btn btn-info text-uppercase fw-bold w-100" onclick="getSecondGPA()">Get GPA</button>
                       </div>
 
                 </div>
