@@ -5,6 +5,11 @@ const getFieldValue = (getId) => {
     return value;
 };
 
+const getAndSetInnerText = (elementId, value) => {
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
+
 
 const checkGradeAndGetTotal = (marks, credit) => {
     let grade = 0;
@@ -54,10 +59,8 @@ const getFirstGPA = () => {
     const phy1Lab = checkGradeAndGetTotal(getFieldValue('phy1Lab'), 1);
     total = cf + c + phy1 + math1 + eng + acc + bs + cfLab + cLab + phy1Lab;
     const gpa = total / 20;
-    const showFirstGPAFront = document.getElementById('showFirstGPAFront');
-    const showFirstGPA = document.getElementById('showFirstGPA');
-    showFirstGPAFront.innerText = gpa.toFixed(2);
-    showFirstGPA.innerText = gpa.toFixed(2);
+    getAndSetInnerText('showFirstGPAFront', gpa.toFixed(2));
+    getAndSetInnerText('showFirstGPA', gpa.toFixed(2));
 };
 
 
@@ -75,8 +78,6 @@ const getSecondGPA = () => {
     const phy2Lab = checkGradeAndGetTotal(getFieldValue('phy2Lab'), 1);
     total = bee + ds + cPlus + phy2 + math2 + pe + beeLab + dsLab + cPlusLab + phy2Lab;
     const gpa = total / 20;
-    const showSecondGPAFront = document.getElementById('showSecondGPAFront');
-    const showSecondGPA = document.getElementById('showSecondGPA');
-    showSecondGPAFront.innerText = gpa.toFixed(2);
-    showSecondGPA.innerText = gpa.toFixed(2);
+    getAndSetInnerText('showSecondGPAFront', gpa.toFixed(2));
+    getAndSetInnerText('showSecondGPA', gpa.toFixed(2));
 };
