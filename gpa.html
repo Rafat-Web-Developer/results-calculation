@@ -558,7 +558,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-seventh">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                    Seventh Semester<span class="mx-auto badge bg-info fw-bold">GPA : 0.00</span>
+                    Seventh Semester<span class="mx-auto badge bg-info fw-bold">GPA : <span id="showSeventhGPAFront">0.00</span></span>
                   </button>
                 </h2>
                 <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-seventh" data-bs-parent="#accordionFlushExample">
@@ -567,77 +567,77 @@
                       <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">PRO-SE</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="proSE" placeholder="Enter Project Selection total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">FNN</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type=<input type="text" class="form-control" id="fnn" placeholder="Enter FNN total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">AI</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="ai" placeholder="Enter AI total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">TE</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="te" placeholder="Enter te total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DSD</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dsd" placeholder="Enter dsd total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">CNS</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="cns" placeholder="Enter cns total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">FNN LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="fnnLab" placeholder="Enter fnn Lab total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">AI LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="aiLab" placeholder="Enter AI Lab total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">TE Lab</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="teLab" placeholder="Enter TE Lab total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DSD Lab</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dsdLab" placeholder="Enter DSD Lab total marks">
                           </div>
                         </div>
   
-                        <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5">0.00</span></p>
+                        <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5" id="showSeventhGPA">0.00</span></p>
 
                         <div class="w-50 my-2 mx-auto">
-                          <button class="btn btn-info text-uppercase fw-bold w-100">Get GPA</button>
+                          <button class="btn btn-info text-uppercase fw-bold w-100" onclick="getSeventhGPA()">Get GPA</button>
                         </div>
   
                   </div>
