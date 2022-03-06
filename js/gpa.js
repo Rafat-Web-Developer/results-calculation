@@ -81,3 +81,22 @@ const getSecondGPA = () => {
     getAndSetInnerText('showSecondGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showSecondGPA', gpa.toFixed(2));
 };
+
+const getThirdGPA = () => {
+    let total = 0;
+    const dld = checkGradeAndGetTotal(getFieldValue('dld'), 3);
+    const dm = checkGradeAndGetTotal(getFieldValue('dm'), 3);
+    const be = checkGradeAndGetTotal(getFieldValue('be'), 3);
+    const java = checkGradeAndGetTotal(getFieldValue('java'), 2);
+    const math3 = checkGradeAndGetTotal(getFieldValue('math3'), 3);
+    const stat = checkGradeAndGetTotal(getFieldValue('stat'), 2);
+    const dldLab = checkGradeAndGetTotal(getFieldValue('dldLab'), 1);
+    const beLab = checkGradeAndGetTotal(getFieldValue('beLab'), 1);
+    const javaLab = checkGradeAndGetTotal(getFieldValue('javaLab'), 2);
+    total = dld + dm + be + java + math3 + stat + dldLab + beLab + javaLab;
+    const gpa = total / 20;
+    getAndSetInnerText('showThirdGPAFront', gpa.toFixed(2));
+    getAndSetInnerText('showThirdGPA', gpa.toFixed(2));
+};
+
+

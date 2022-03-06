@@ -229,7 +229,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-third">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Third Semester<span class="mx-auto badge bg-info fw-bold">GPA : 0.00</span>
+                    Third Semester<span class="mx-auto badge bg-info fw-bold">GPA : <span id="showThirdGPAFront">0.00</span></span>
                   </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-third" data-bs-parent="#accordionFlushExample">
@@ -238,70 +238,70 @@
                       <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DLD</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dld" placeholder="Enter dld total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DM</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dm" placeholder="Enter dm total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">BE</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="be" placeholder="Enter be total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">JAVA</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="java" placeholder="Enter java total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">MATH3</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="math3" placeholder="Enter Math3 total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">STAT</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="stat" placeholder="Enter stat total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DLD LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dldLab" placeholder="Enter dld lab total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">BE LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="beLab" placeholder="Enter be lab total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">JAVA LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="javaLab" placeholder="Enter Java lab total marks">
                           </div>
                         </div>
   
-                        <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5">0.00</span></p>
+                        <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5" id="showThirdGPA">0.00</span></p>
 
                         <div class="w-50 my-2 mx-auto">
-                          <button class="btn btn-info text-uppercase fw-bold w-100">Get GPA</button>
+                          <button class="btn btn-info text-uppercase fw-bold w-100" onclick="getThirdGPA()">Get GPA</button>
                         </div>
   
                   </div>
