@@ -87,9 +87,9 @@ const getThirdGPA = () => {
     const dld = checkGradeAndGetTotal(getFieldValue('dld'), 3);
     const dm = checkGradeAndGetTotal(getFieldValue('dm'), 3);
     const be = checkGradeAndGetTotal(getFieldValue('be'), 3);
-    const java = checkGradeAndGetTotal(getFieldValue('java'), 2);
+    const java = checkGradeAndGetTotal(getFieldValue('java'), 3);
     const math3 = checkGradeAndGetTotal(getFieldValue('math3'), 3);
-    const stat = checkGradeAndGetTotal(getFieldValue('stat'), 2);
+    const stat = checkGradeAndGetTotal(getFieldValue('stat'), 3);
     const dldLab = checkGradeAndGetTotal(getFieldValue('dldLab'), 1);
     const beLab = checkGradeAndGetTotal(getFieldValue('beLab'), 1);
     const javaLab = checkGradeAndGetTotal(getFieldValue('javaLab'), 2);
@@ -98,5 +98,22 @@ const getThirdGPA = () => {
     getAndSetInnerText('showThirdGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showThirdGPA', gpa.toFixed(2));
 };
+
+const getFourthGPA = () => {
+    let total = 0;
+    const ca1 = checkGradeAndGetTotal(getFieldValue('ca1'), 3);
+    const inc = checkGradeAndGetTotal(getFieldValue('inc'), 3);
+    const na = checkGradeAndGetTotal(getFieldValue('na'), 3);
+    const ca2 = checkGradeAndGetTotal(getFieldValue('ca2'), 3);
+    const math4 = checkGradeAndGetTotal(getFieldValue('math4'), 3);
+    const caLab = checkGradeAndGetTotal(getFieldValue('caLab'), 1);
+    const incLab = checkGradeAndGetTotal(getFieldValue('incLab'), 2);
+    const naLab = checkGradeAndGetTotal(getFieldValue('naLab'), 1);
+    total = ca1 + inc + na + ca2 + math4 + caLab + incLab + naLab;
+    const gpa = total / 20;
+    getAndSetInnerText('showFourthGPAFront', gpa.toFixed(2));
+    getAndSetInnerText('showFourthGPA', gpa.toFixed(2));
+};
+
 
 
