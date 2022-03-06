@@ -77,7 +77,7 @@ const getSecondGPA = () => {
     const cPlusLab = checkGradeAndGetTotal(getFieldValue('cPlusLab'), 2);
     const phy2Lab = checkGradeAndGetTotal(getFieldValue('phy2Lab'), 1);
     total = bee + ds + cPlus + phy2 + math2 + pe + beeLab + dsLab + cPlusLab + phy2Lab;
-    const gpa = total / 20;
+    const gpa = total / 21;
     getAndSetInnerText('showSecondGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showSecondGPA', gpa.toFixed(2));
 };
@@ -94,7 +94,7 @@ const getThirdGPA = () => {
     const beLab = checkGradeAndGetTotal(getFieldValue('beLab'), 1);
     const javaLab = checkGradeAndGetTotal(getFieldValue('javaLab'), 2);
     total = dld + dm + be + java + math3 + stat + dldLab + beLab + javaLab;
-    const gpa = total / 20;
+    const gpa = total / 22;
     getAndSetInnerText('showThirdGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showThirdGPA', gpa.toFixed(2));
 };
@@ -110,7 +110,7 @@ const getFourthGPA = () => {
     const incLab = checkGradeAndGetTotal(getFieldValue('incLab'), 2);
     const naLab = checkGradeAndGetTotal(getFieldValue('naLab'), 1);
     total = ca1 + inc + na + ca2 + math4 + caLab + incLab + naLab;
-    const gpa = total / 20;
+    const gpa = total / 19;
     getAndSetInnerText('showFourthGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showFourthGPA', gpa.toFixed(2));
 };
@@ -128,7 +128,7 @@ const getFifthGPA = () => {
     const microLab = checkGradeAndGetTotal(getFieldValue('microLab'), 2);
     const sdp1 = checkGradeAndGetTotal(getFieldValue('sdp1'), 2);
     total = dbms + dc + os + micro + sad + dbmsLab + osLab + microLab + sdp1;
-    const gpa = total / 20;
+    const gpa = total / 22;
     getAndSetInnerText('showFifthGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showFifthGPA', gpa.toFixed(2));
 };
@@ -146,7 +146,7 @@ const getSixthGPA = () => {
     const sub8 = checkGradeAndGetTotal(getFieldValue('cpiLab'), 1);
     const sub9 = checkGradeAndGetTotal(getFieldValue('sdp2'), 2);
     total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 + sub8 + sub9;
-    const gpa = total / 20;
+    const gpa = total / 21;
     getAndSetInnerText('showSixthGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showSixthGPA', gpa.toFixed(2));
 };
@@ -179,7 +179,7 @@ const getEighthGPA = () => {
     const sub5 = checkGradeAndGetTotal(getFieldValue('it'), 2);
     const sub6 = checkGradeAndGetTotal(getFieldValue('cgLab'), 1);
     total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6;
-    const gpa = total / 20;
+    const gpa = total / 15;
     getAndSetInnerText('showEighthGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showEighthGPA', gpa.toFixed(2));
 };
