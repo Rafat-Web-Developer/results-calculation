@@ -390,7 +390,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-fifth">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Fifth Semester<span class="mx-auto badge bg-info fw-bold">GPA : 0.00</span>
+                    Fifth Semester<span class="mx-auto badge bg-info fw-bold">GPA : <span id="showFifthGPAFront">0.00</span></span>
                   </button>
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-fifth" data-bs-parent="#accordionFlushExample">
@@ -399,70 +399,70 @@
                       <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DBMS</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dbms" placeholder="Enter dbms total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DC</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dc" placeholder="Enter dc total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">OS</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="os" placeholder="Enter os total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">MICRO</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="micro" placeholder="Enter micro total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">SAD</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="sad" placeholder="Enter SAD total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">DBMS LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="dbmsLab" placeholder="Enter dbmsLab total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">OS LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="osLab" placeholder="Enter osLab total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">MICRO LAB</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="micro" placeholder="Enter micro total marks">
                           </div>
                         </div>
   
                         <div class="mb-3 row">
                           <label for="inputPassword" class="col-2 col-form-label fw-bold">SDP1</label>
                           <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" id="sdp1" placeholder="Enter sdp1 total marks">
                           </div>
                         </div>
   
-                        <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5">0.00</span></p>
+                        <p class="text-center fw-bold">Your GPA : <span class="text-info fs-5" id="showFifthGPA">0.00</span></p>
 
                         <div class="w-50 my-2 mx-auto">
-                          <button class="btn btn-info text-uppercase fw-bold w-100">Get GPA</button>
+                          <button class="btn btn-info text-uppercase fw-bold w-100" onclick="getFifthGPA()">Get GPA</button>
                         </div>
   
                   </div>

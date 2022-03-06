@@ -116,4 +116,19 @@ const getFourthGPA = () => {
 };
 
 
-
+const getFifthGPA = () => {
+    let total = 0;
+    const dbms = checkGradeAndGetTotal(getFieldValue('dbms'), 3);
+    const dc = checkGradeAndGetTotal(getFieldValue('dc'), 3);
+    const os = checkGradeAndGetTotal(getFieldValue('os'), 3);
+    const micro = checkGradeAndGetTotal(getFieldValue('micro'), 3);
+    const sad = checkGradeAndGetTotal(getFieldValue('sad'), 3);
+    const dbmsLab = checkGradeAndGetTotal(getFieldValue('dbmsLab'), 2);
+    const osLab = checkGradeAndGetTotal(getFieldValue('osLab'), 1);
+    const microLab = checkGradeAndGetTotal(getFieldValue('microLab'), 2);
+    const sdp1 = checkGradeAndGetTotal(getFieldValue('sdp1'), 2);
+    total = ca1 + inc + na + ca2 + math4 + caLab + incLab + naLab;
+    const gpa = total / 20;
+    getAndSetInnerText('showFifthGPAFront', gpa.toFixed(2));
+    getAndSetInnerText('showFifthGPA', gpa.toFixed(2));
+};
