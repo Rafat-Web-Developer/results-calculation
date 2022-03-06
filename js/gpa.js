@@ -169,3 +169,17 @@ const getSeventhGPA = () => {
     getAndSetInnerText('showSeventhGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showSeventhGPA', gpa.toFixed(2));
 };
+
+const getEighthGPA = () => {
+    let total = 0;
+    const sub1 = checkGradeAndGetTotal(getFieldValue('finalPro'), 3);
+    const sub2 = checkGradeAndGetTotal(getFieldValue('cg'), 3);
+    const sub3 = checkGradeAndGetTotal(getFieldValue('dsp'), 3);
+    const sub4 = checkGradeAndGetTotal(getFieldValue('et1'), 3);
+    const sub5 = checkGradeAndGetTotal(getFieldValue('it'), 2);
+    const sub6 = checkGradeAndGetTotal(getFieldValue('cgLab'), 1);
+    total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6;
+    const gpa = total / 20;
+    getAndSetInnerText('showEighthGPAFront', gpa.toFixed(2));
+    getAndSetInnerText('showEighthGPA', gpa.toFixed(2));
+};
