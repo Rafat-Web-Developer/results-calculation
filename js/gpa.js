@@ -127,7 +127,7 @@ const getFifthGPA = () => {
     const osLab = checkGradeAndGetTotal(getFieldValue('osLab'), 1);
     const microLab = checkGradeAndGetTotal(getFieldValue('microLab'), 2);
     const sdp1 = checkGradeAndGetTotal(getFieldValue('sdp1'), 2);
-    total = ca1 + inc + na + ca2 + math4 + caLab + incLab + naLab;
+    total = dbms + dc + os + micro + sad + dbmsLab + osLab + microLab + sdp1;
     const gpa = total / 20;
     getAndSetInnerText('showFifthGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showFifthGPA', gpa.toFixed(2));
