@@ -1,7 +1,6 @@
 const getFieldValue = (getId) => {
     const field = document.getElementById(getId);
     const value = field.value;
-    field.value = '';
     return value;
 };
 
@@ -182,4 +181,24 @@ const getEighthGPA = () => {
     const gpa = total / 15;
     getAndSetInnerText('showEighthGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showEighthGPA', gpa.toFixed(2));
+};
+
+let sum = 0;
+
+const getValueFromElementAndCalculate = (elementId, credit) => {
+    const element = document.getElementById(elementId);
+    const value = parseFloat(element.innerText) * credit;
+    sum += value;
+    return value;
+};
+
+const calculateCGPA = () => {
+    getValueFromElementAndCalculate('showFirstGPA', 20);
+    getValueFromElementAndCalculate('showSecondGPA', 21);getValueFromElementAndCalculate('showThirdGPA', 22);
+    getValueFromElementAndCalculate('showFourthGPA', 19);getValueFromElementAndCalculate('showFifthGPA', 22);getValueFromElementAndCalculate('showSixthGPA', 21);
+    getValueFromElementAndCalculate('showSeventhGPA', 20);
+    getValueFromElementAndCalculate('showEighthGPA', 15);
+    
+    const cgpa = sum / 160;
+    document.getElementById('showCGPA').innerText = cgpa.toFixed(2);
 };
