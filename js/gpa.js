@@ -132,3 +132,21 @@ const getFifthGPA = () => {
     getAndSetInnerText('showFifthGPAFront', gpa.toFixed(2));
     getAndSetInnerText('showFifthGPA', gpa.toFixed(2));
 };
+
+
+const getSixthGPA = () => {
+    let total = 0;
+    const sub1 = checkGradeAndGetTotal(getFieldValue('cn'), 3);
+    const sub2 = checkGradeAndGetTotal(getFieldValue('tc'), 2);
+    const sub3 = checkGradeAndGetTotal(getFieldValue('compiler'), 3);
+    const sub4 = checkGradeAndGetTotal(getFieldValue('cms'), 3);
+    const sub5 = checkGradeAndGetTotal(getFieldValue('cpi'), 3);
+    const sub6 = checkGradeAndGetTotal(getFieldValue('se'), 3);
+    const sub7 = checkGradeAndGetTotal(getFieldValue('cnLab'), 1);
+    const sub8 = checkGradeAndGetTotal(getFieldValue('cpiLab'), 1);
+    const sub9 = checkGradeAndGetTotal(getFieldValue('sdp2'), 2);
+    total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 + sub8 + sub9;
+    const gpa = total / 20;
+    getAndSetInnerText('showSixthGPAFront', gpa.toFixed(2));
+    getAndSetInnerText('showSixthGPA', gpa.toFixed(2));
+};
